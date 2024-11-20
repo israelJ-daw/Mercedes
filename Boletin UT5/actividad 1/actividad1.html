@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <script type="text/javascript" src="actividad1.js "></script>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    
+<h1>Rellene el formulario</h1>
+
+
+<form>
+<p>
+  <label class="texto" for="Nombre">Nombre:</label>
+  <input class="texto" id="Nombre" name="Nombre" type="text" value="" placeholder="Nombre" required> 
+  <input class="texto" id="Apellido" name="Apellido" type="text" value="" placeholder="Apellido" required> 
+</p>
+
+<p>
+    <label class="texto" for="Usuario">Nombre Usuario:</label>
+    <input  class="texto" id="email" name="email" type="email" value="" placeholder="@gmail.com" required>
+</p>
+
+
+<p>
+    <label  class="texto" for="contraseña">Contraseña:</label>
+    <input class="texto"  id="password" name="contraseña" type="password" value="" placeholder="Contraseña" required min="7" max="30"
+    pattern="[A-Z][a-z][1-9][!*$%]" >
+</p>
+
+<p>
+    <label class="texto"  for="contraseña2">Confirma tu Contraseña:</label>
+    <input class="texto" id="password" name="contraseña2" type="password" value="" placeholder="Contraseña" required  
+     pattern="[A-Z][a-z][1-9][!*$%]">
+</p>
+
+<p>
+    <label class="texto"  for="Nacimiento">Fecha Nacimiento:</label>
+    <input class="texto" id= "dia" type="text" name="Dia" value="" placeholder="Dia" required>
+    <select>
+        <option>Enero</option>
+        <option>Febrero</option>
+        <option>Marzo</option>
+        <option>Abril</option>
+        <option>Mayo</option>
+        <option>Junio</option>
+        <option>Julio</option>
+        <option>Agosto</option>
+        <option>Septiembre</option>
+        <option>Octubre</option>
+        <option>Noviembre</option>
+        <option>Diciembre</option>
+    </select>    
+    <input class="texto"   id= "texto" type="text" name="Año" value="" placeholder="Año" required >
+</p>   
+
+<p>
+    <label class="texto"  for="Sexo">Sexo:</label>
+    <select>
+    
+        <option>Hombre</option>
+        <option>Mujer</option>
+        <option>Otro</option>
+    </select>    
+</p>
+
+<p>
+    <label class="texto"  for="tlf">Telefono Movil:</label>
+    <input  class="texto" id = "tlf" type="number" name="tlf" placeholder="Telefono Movil" required>
+</p> 
+
+<p>
+    <label class="texto"  for="email2">Dirrecion de correo electronico actual:</label>
+    <input class="texto"  id="email" name="email" type="email" value="" placeholder="@gmail.com" required>
+
+</p>    
+
+<input type="submit" id = "mayus" value="Enviar">
+
+</form>
+</body>
+</html>
+
+
+<!--La primera linea que tenemos que incluir en todos los js de aqui en adelante va a ser 
+
+Window.addEventListener("Load" , inicar , false);
+
+fuction inicar(){
+
+Aqui escribimos todas las lines de codigo con los que vamos a llamarla la linea y ya abajo se crea la funcion
+
+}
+
+-->
