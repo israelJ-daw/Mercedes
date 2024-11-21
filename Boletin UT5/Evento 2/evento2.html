@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <script type="text/javascript" src="evento2.js"></script>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Envío de SMS</title>
+</head>
+<body>
+    <h2>Formulario para Enviar SMS</h2>
+    
+    <label for="texto_sms">Escribe tu mensaje (máximo 145 caracteres):</label><br>
+    <textarea id="texto_sms" maxlength="145" oninput="actualizarContador()" placeholder="Escribe aquí..."></textarea><br>
+    
+    <span id="contador_caracteres">Caracteres restantes: 145</span><br><br>
+    
+    <button>Enviar SMS</button>
+
+</body>
+</html>

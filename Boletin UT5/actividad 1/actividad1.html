@@ -28,36 +28,34 @@
 
 
 <p>
-    <label  class="texto" for="contraseña">Contraseña:</label>
-    <input class="texto"  id="password" name="contraseña" type="password" value="" placeholder="Contraseña" required min="7" max="30"
-    pattern="[A-Z][a-z][1-9][!*$%]" >
+    <label class="texto" for="contraseña">Contraseña:</label>
+    <input class="texto" id="password" name="contraseña" type="password" 
+           placeholder="Contraseña" required 
+           pattern="^(?=.*[A-Z])(?=.*\d)(?=.*[!@$%^&*]).{8,}$"
+           title="Debe tener al menos 8 caracteres, incluyendo una mayúscula, una minúscula, un número y un carácter especial (!@$%^&*).">
 </p>
 
-<p>
-    <label class="texto"  for="contraseña2">Confirma tu Contraseña:</label>
-    <input class="texto" id="password" name="contraseña2" type="password" value="" placeholder="Contraseña" required  
-     pattern="[A-Z][a-z][1-9][!*$%]">
-</p>
+
 
 <p>
-    <label class="texto"  for="Nacimiento">Fecha Nacimiento:</label>
-    <input class="texto" id= "dia" type="text" name="Dia" value="" placeholder="Dia" required>
-    <select>
-        <option>Enero</option>
-        <option>Febrero</option>
-        <option>Marzo</option>
-        <option>Abril</option>
-        <option>Mayo</option>
-        <option>Junio</option>
-        <option>Julio</option>
-        <option>Agosto</option>
-        <option>Septiembre</option>
-        <option>Octubre</option>
-        <option>Noviembre</option>
-        <option>Diciembre</option>
-    </select>    
-    <input class="texto"   id= "texto" type="text" name="Año" value="" placeholder="Año" required >
-</p>   
+    <label class="texto" for="contraseña">Contraseña:</label>
+    <input class="texto" id="password" name="contraseña" type="password" 
+           placeholder="Contraseña" required 
+           pattern="^(?=.*[A-Z])(?=.*\d)(?=.*[!@$%^&*]).{8,}$"
+           title="Debe tener al menos 8 caracteres, incluyendo una mayúscula, una minúscula, un número y un carácter especial (!@$%^&*).">
+</p>
+
+
+
+<p>
+    <label class="texto" for="Nacimiento">Fecha de Nacimiento:</label>
+    <input class="texto" id="fechaNacimiento" type="date" name="fechaNacimiento" required>
+    
+    <label class="texto" for="edad">Edad:</label>
+    <input class="texto" id="edad" type="text" name="edad" readonly>
+</p>
+
+
 
 <p>
     <label class="texto"  for="Sexo">Sexo:</label>

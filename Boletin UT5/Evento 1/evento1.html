@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+
+    <script type="text/javascript" src="evento1.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen Tipo Test</title>
+</head>
+<body>
+    <h2>Examen Tipo Test</h2>
+
+    <!-- Pregunta 1 -->
+    <div id="pregunta1">
+        <p>1. ¿Cuál es la capital de España?</p>
+        <label><input type="radio" name="p1" value="A"> Madrid</label><br>
+        <label><input type="radio" name="p1" value="B"> Barcelona</label><br>
+        <label><input type="radio" name="p1" value="C"> Valencia</label><br>
+        <label><input type="radio" name="p1" value="D"> Sevilla</label><br>
+    </div>
+
+    <!-- Pregunta 2 -->
+    <div id="pregunta2">
+        <p>2. ¿Cuánto es 5 + 3?</p>
+        <label><input type="radio" name="p2" value="A"> 6</label><br>
+        <label><input type="radio" name="p2" value="B"> 7</label><br>
+        <label><input type="radio" name="p2" value="C"> 8</label><br>
+        <label><input type="radio" name="p2" value="D"> 9</label><br>
+    </div>
+
+    <!-- Botón para comprobar respuestas -->
+    <button onclick="comprobar()">Comprobar respuestas</button>
+
+    <!-- Resultado -->
+    <div id="pregunta1" class="resultado"></div>
+    <div id="pregunta2" class="resultado"></div>
+    <div id="preguntacorrecta" class="resultado"></div>
+    <div id="preguntacorrecta2" class="resultado"></div>
+
+</body>
+</html>

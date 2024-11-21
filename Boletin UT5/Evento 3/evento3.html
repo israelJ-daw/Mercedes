@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <script type="text/javascript" src="evento3.js"></script>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Nombre en Mayúsculas</title>
+</head>
+<body>
+    <h2>Formulario de Nombre en Mayúsculas</h2>
+
+    <form id="formulario" action="servidor.php" method="POST" onsubmit="return validarFormulario()">
+        <label for="nombre">Escribe tu nombre en mayúsculas:</label><br>
+        <input type="text" id="nombre" name="nombre" placeholder="Ejemplo: JUAN" required><br><br>
+
+        <input type="image" src="enviar.png" alt="Enviar" width="100" height="50">
+
+        <span id="mensaje_error" style="color:red; display:none;">Por favor, ingresa tu nombre en MAYÚSCULAS.</span>
+    </form>
+
+</body>
+</html>
